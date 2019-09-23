@@ -1,76 +1,70 @@
-
-
 body
 {
     font-family: 'segoe ui light';
 }
-.item , #next , #prev , #close
+.item
 {
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+#projects .item-caption
+{
+    background-color: #fff;
+    width: 80%;
+    padding: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 10%;  
+}
+.lightbox-container
+{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+}
+.show
+{
+    display: block;
+}
+.lightbox-item
+{
+    margin-top: 50px;
+    height: 500px;
+    background-image: url(../images/portfolio-1.jpg);
+    background-size: 100% 100%;
+}
+
+#close
+{
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    top: 60px;
     cursor: pointer;
 }
 
 
-.item
+#next
 {
-    background-color: #09c;
-    position: relative;
-    margin-bottom: 5px;
+    z-index: 565656;
+    
 }
-.caption
+#next , #prev
 {
-    background-color: #fff;
-    width: 80%;
+    display: inline !important;
+    font-size: 30px;
     position: absolute;
-    bottom: 20px;
-    left: 10%;
-    padding: 10px;
+    top: 50%;
+    right: 30px;
+    cursor: pointer;
 }
-
-
-
-#lightbox-container
+#prev
 {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0.6);
-    display: none ;
+    left: 30px;
 }
-
-.show
-{
-    display: flex !important;
-}
-
-#lightbox-item
-{
-    width: 50%;
-    height: 500px;
-    background-image: url(../images/portfolio-1.jpg);
-    background-size: 100% 100%;
-    position: relative;
-}
-
-
-
-
-#close
-{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
 
